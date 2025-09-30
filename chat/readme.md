@@ -70,7 +70,7 @@
 - **`chat:addSuggestion(name, help, params?)`** → Adds a global suggestion  
 - **`chat:removeSuggestion(name)`** → Removes a global suggestion  
 - **`chat:clear`** → Clears chat for everyone  
-- **`_chat:messageEntered(author, color, message, mode)`** → Player sent a message   
+- **`_chat:messageEntered(author, color, message, mode)`** → Player sent a message  
 - **`chatMessage(source, author, text)`** → Message routed by the server  
 - **`playerJoining`** → Native event (shows join message)  
 - **`playerDropped(reason)`** → Shows player quit message  
@@ -93,11 +93,14 @@ exports["chat"]:addMessage({
 
 ### Client-side Example: `addSuggestion`
 ```lua
--- Send a simple text message to the chat
--- Send a formatted message
+-- Add a suggestion for a command
 exports["chat"]:addSuggestion("/car", "Spawn a vehicle", {
     { name = "model", help = "Vehicle model name" }
 })
+
+-- Now typing '/car ' in chat will show the suggestion
 ```
+
+---
 
 ⚙️ This documentation covers the **exports** and **events** (both public and internal) provided by the `chat` resource.

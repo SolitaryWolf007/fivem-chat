@@ -77,3 +77,10 @@ Now you can directly edit:
 - **Simpler**: Fewer files to manage
 - **Same result**: Identical functionalities to the original
 
+## Pictures
+
+### Default Theme
+[Default Theme](https://imgur.com/kIowbiV)
+
+### GTA:O Theme (chat-theme-gtao)
+[GTA:O Theme](https://imgur.com/TxCmI07)
