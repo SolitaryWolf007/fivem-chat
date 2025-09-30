@@ -1,0 +1,187 @@
+.color-0{color: #ffffff;}
+.color-1{color: #ff4444;}
+.color-2{color: #99cc00;}
+.color-3{color: #ffbb33;}
+.color-4{color: #0099cc;}
+.color-5{color: #33b5e5;}
+.color-6{color: #aa66cc;}
+.color-8{color: #cc0000;}
+.color-9{color: #cc0068;}
+
+.gameColor-w{color: #ffffff;}
+.gameColor-r{color: #ff4444;}
+.gameColor-g{color: #99cc00;}
+.gameColor-y{color: #ffbb33;}
+.gameColor-b{color: #33b5e5;}
+
+/* todo: more game colors */
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.chat-window {
+  position: absolute;
+  top: 1.5%;
+  left: 0.8%;
+  width: 38%;
+  height: 22%;
+  max-width: 1000px;
+  background-color: rgba(52, 73, 94, 0.7);
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+
+.chat-window.hidden {
+  display: none;
+}
+
+.chat-window.animated {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+.chat-messages {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 0.4vw;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.msg {
+  margin-bottom: 0.2vw;
+  font-size: 0.95vw;
+  font-weight: 300;
+  text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5);
+}
+
+.msg.multiline {
+  margin-bottom: 0.5vw;
+}
+
+.chat-input {
+  position: absolute;
+  top: 24%;
+  left: 0.8%;
+  width: 38%;
+  max-width: 1000px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  background-color: rgba(52, 73, 94, 0.7);
+  border: 0.15vw solid rgba(255, 255, 255, 0.2);
+  /* border-radius: 0.3vw; */
+  padding: 0.4vw;
+  /* margin-bottom: 0.5vw; */
+}
+
+.prefix {
+  color: #fff;
+  font-size: 0.95vw;
+  font-weight: 300;
+  /* margin-right: 0.5vw; */
+  line-height: 1.4;
+  min-width: 1.5vw;
+  text-align: center;
+}
+
+/* .prefix.any {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.2vw;
+  padding: 0.1vw 0.3vw;
+} */
+
+textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.95vw;
+  font-weight: 300;
+  resize: none;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  max-height: 5vw;
+  overflow-y: hidden;
+}
+
+.suggestions-wrap {
+  background-color: rgba(52, 73, 94, 0.9);
+  border-radius: 0 0 0.3vw 0.3vw;
+  margin-bottom: 0.5vw;
+  max-height: 10vw;
+  overflow-y: hidden;
+}
+
+.suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion {
+  padding: 0.4vw;
+  border-bottom: 0.05vw solid rgba(255, 255, 255, 0.1);
+}
+
+.suggestion:last-child {
+  border-bottom: none;
+}
+
+.suggestion p {
+  margin: 0;
+  font-size: 0.85vw;
+  font-weight: 400;
+}
+
+.suggestion .param {
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 0.3vw;
+}
+
+.suggestion .disabled {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.suggestion .help {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75vw;
+  margin-top: 0.2vw;
+}
+
+.chat-hide-state {
+  background-color: rgba(52, 73, 94, 0.9);
+  border-radius: 0.3vw;
+  padding: 0.4vw;
+  text-align: center;
+  font-size: 0.85vw;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
