@@ -80,7 +80,7 @@ Now you can directly edit:
 ## Pictures
 
 ### Default Theme
-[Default Theme](https://imgur.com/kIowbiV)
+![Default Theme](https://i.imgur.com/kIowbiV.png)
 
 ### GTA:O Theme (chat-theme-gtao)
-[GTA:O Theme](https://imgur.com/TxCmI07)
+![GTA:O Theme](https://i.imgur.com/TxCmI07.png)
